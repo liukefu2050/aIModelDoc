@@ -9,13 +9,42 @@ Windows 原生 Python 环境不完全支持 vLLM 的 CUDA 架构。
 wsl --install -d Ubuntu
 ```
 
+### 使用本机网络代理
+
+ipconfig 查看本机IP：192.168.15.113
+在 WSL 内使用这个 IP 访问代理，例如：
+
+export http_proxy=http://192.168.15.53:7890;export https_proxy=http://192.168.15.53:7890
+$Env:http_proxy="http://192.168.15.53:7890";$Env:https_proxy="http://192.168.15.53:7890"
+
 ### 更新 Ubuntu 并安装依赖
+
+进入 Ubuntu 终端（可以在 Windows 搜索 “Ubuntu” 打开）
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3.10 python3.10-venv python3-pip git wget curl build-essential
 ```
 
+python 安装问题
+添加 Python 3.10 的官方 PPA 源
+```
+sudo apt update
+sudo apt install -y software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa -y
+sudo apt update
+
+sudo apt install -y python3.10 python3.10-venv python3-pip
+
+```
+
 ### 创建虚拟环境（推荐）
+
+Python3.10 环境缺少 ensurepip（安装 pip 的标准库模块）
+```
+sudo apt install -y python3.10-venv python3.10-distutils python3.10-lib2to3 python3.10-dev
+sudo apt install -y python3-pip
+```
+激活虚拟环境
 ```
 python3.10 -m venv vllm-env
 source vllm-env/bin/activate
@@ -23,7 +52,13 @@ source vllm-env/bin/activate
 python --version
 应显示 Python 3.10.x
 ```
-
+虚拟环境创建有时候会报错：比如在当前目录在 /mnt/d/...，也就是 Windows 的 NTFS 分区挂载路径
+切换到 WSL 内部目录
+```
+cd ~
+pwd
+输出应类似 /home/liukefu
+```
 ### 安装 CUDA 支持（如果你有 NVIDIA GPU）
 
 在 Windows 确保安装了 NVIDIA 驱动
@@ -51,13 +86,20 @@ pip install torch==2.3.0 torchvision torchaudio --index-url https://download.pyt
 pip install vllm
 验证：
 python -m vllm.version
+python -c "import vllm; print(vllm.__version__)"
 
 ### 下载并运行 DeepSeek 模型
 
 示例（以 deepseek-coder-6.7b-base 为例）：
 ```
 python -m vllm.entrypoints.openai.api_server --model deepseek-ai/deepseek-coder-6.7b-base
+
+设置 HF 镜像
+export HF_ENDPOINT=https://hf-mirror.com
+python -m vllm.entrypoints.openai.api_server --model deepseek-ai/deepseek-coder-6.7b-base
+
 ```
+
 
 📍 运行后输出类似：
 ```
