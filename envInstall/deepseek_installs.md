@@ -14,8 +14,8 @@ wsl --install -d Ubuntu
 ipconfig 查看本机IP：192.168.15.113
 在 WSL 内使用这个 IP 访问代理，例如：
 
-export http_proxy=http://192.168.15.53:7890;export https_proxy=http://192.168.15.53:7890
-$Env:http_proxy="http://192.168.15.53:7890";$Env:https_proxy="http://192.168.15.53:7890"
+export http_proxy=http://192.168.15.88:7890;export https_proxy=http://192.168.15.88:7890
+$Env:http_proxy="http://192.168.15.88:7890";$Env:https_proxy="http://192.168.15.88:7890"
 
 ### 更新 Ubuntu 并安装依赖
 
@@ -93,12 +93,19 @@ python -c "import vllm; print(vllm.__version__)"
 示例（以 deepseek-coder-6.7b-base 为例）：
 ```
 python -m vllm.entrypoints.openai.api_server --model deepseek-ai/deepseek-coder-6.7b-base
-
-设置 HF 镜像
+# 去掉镜像
+unset HF_ENDPOINT
+unset HF_HOME
+unset HF_HUB_ENABLE_HF_TRANSFER 
+# 设置 HF 镜像
 export HF_ENDPOINT=https://hf-mirror.com
+# 清华 Tuna 镜像（huggingface）
+export HF_ENDPOINT=https://hf-mirror.tuna.tsinghua.edu.cn
 python -m vllm.entrypoints.openai.api_server --model deepseek-ai/deepseek-coder-6.7b-base
 
 ```
+huggingface 官方下载
+https://huggingface.co/settings/tokens
 
 
 📍 运行后输出类似：
