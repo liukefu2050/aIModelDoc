@@ -92,20 +92,20 @@ const shader = new pc.Shader(app.graphicsDevice, {
 
 ## 3?? 必练 Shader 小效果（强烈建议）
 
-### ? 呼吸光（Emission + sin）
+###  呼吸光（Emission + sin）
 
 ```glsl
 float glow = abs(sin(uTime));
 return vec3(0.2, 0.6, 1.0) * glow;
 ```
 
-### ? 扫描线（世界坐标）
+###  扫描线（世界坐标）
 
 ```glsl
 float scan = step(0.95, fract(vPosition.y * 2.0));
 ```
 
-### ? 溶解效果
+###  溶解效果
 
 * 噪声贴图
 * discard 像素
