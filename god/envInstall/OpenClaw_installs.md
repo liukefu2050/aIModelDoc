@@ -187,7 +187,11 @@ agent main | session main (openclaw-tui) | qwen-portal/coder-model | tokens 0/12
 ### 使用 TUI（推荐）
 
 ```bash
-openclaw hatch
+启动
+openclaw tui
+重启gateway
+openclaw gateway restart
+
 ```
 
 * 重新加载上一次的 Agent 和模型
