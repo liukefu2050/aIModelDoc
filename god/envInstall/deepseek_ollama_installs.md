@@ -33,7 +33,10 @@ C:\Users\<你的用户名>\.ollama\models
 
 ```
 ollama run deepseek-r1:7b
+ollama run qwen3:30b
+
 ollama stop deepseek-r1:8b
+ollama stop qwen3:30b
 ```
 
 ###  常用方法
