@@ -36,6 +36,9 @@ ollama run deepseek-r1:7b
 ollama stop deepseek-r1:8b
 ```
 
+###  常用方法
+1️⃣ 使用 ollama list
+ollama list
 
 
 ### Windows 下如何【关闭 Ollama 服务】
