@@ -1,0 +1,87 @@
+无线网络
+SHMEC-DEP
+ShmecDevelopPass!
+
+# 远程桌面
+mstsc /admin
+114.115.207.52
+wangchun
+
+D0r@em0n365^me#Space_2017
+
+服务器
+1.94.131.165
+
+长城宽带
+190100068562
+
+测试环境
+10.50.50.24
+A1@ab1
+192.168.100.50
+password
+邮箱
+http://mail.shmec.com.cn/
+liukf 380177Lkf
+
+svn
+svn://192.168.15.17/sadoc
+liukefu
+888888
+
+数据库
+192.168.29.1
+A1@ab123
+
+Me@2016
+```
+zhangsan zhangsan123!@#
+```
+
+网络配置
+192.168.15.88
+255.255.255.0
+192.168.15.254
+
+DNS
+233.6.6.6
+192.168.15.128
+
+ftp
+ftp://192.168.15.158/
+
+代理配置
+$env:https_proxy = "http://127.0.0.1:7890"; $env:http_proxy = "http://127.0.0.1:7890";  $env:all_proxy = "socks5://127.0.0.1:7890";
+
+npm 配置
+配置环境变量path 增加D:\npm-global\packages
+npm config set prefix D:\npm-global\packages --global
+npm config set cache D:\npm-global\caches --global
+powershell 权限问题 执行 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+
+E26XA6OP    dq4v8dq6tnmde1c0
+
+web服务器地址，宝塔面板
+root
+dPmZE0jtFaip
+206.119.175.177
+https://206.119.175.177:33595/2e05479c
+fb5a2070
+mGpiL8asnX
+vi /etc/ssh/sshd_config
+49469
+
+$changes = svn diff -r 66087:66125
+$insertions = ($changes | Select-String -Pattern "^\+[^\+].*" -AllMatches).Matches.Count
+$deletions = ($changes | Select-String -Pattern "^\-[^\-].*" -AllMatches).Matches.Count
+Write-Output "Insertions: $insertions, Deletions: $deletions, Total changes: $($insertions + $deletions)"
+
+svn diff -r 66087:66125 --summarize
+
+svn diff -r 64240 --summarize
+
+$changes = svn diff -r 64240
+$insertions = ($changes | Select-String -Pattern "^\+[^\+].*" -AllMatches).Matches.Count
+$deletions = ($changes | Select-String -Pattern "^\-[^\-].*" -AllMatches).Matches.Count
+Write-Output "Insertions: $insertions, Deletions: $deletions, Total changes: $($insertions + $deletions)"
