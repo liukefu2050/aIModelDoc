@@ -20,15 +20,15 @@ hermes-agent 使用
 ```
 wsl -d Ubuntu
 export http_proxy="http://192.168.15.88:7897";export https_proxy="http://192.168.15.88:7897";export ALL_PROXY="http://192.168.15.88:7890"
-hermes              # 开始聊天 Interactive CLI — start a conversation
-hermes model        # Choose your LLM provider and model
-hermes tools        # Configure which tools are enabled
-hermes config set   # Set individual config values
-hermes gateway      # Start the messaging gateway (Telegram, Discord, etc.)
-hermes setup        # Run the full setup wizard (configures everything at once)
-hermes claw migrate # Migrate from OpenClaw (if coming from OpenClaw)
-hermes update       # Update to the latest version
-hermes doctor       # Diagnose any issues
+hermes # 开始聊天 交互式 CLI — 发起对话
+hermes model # 选择您的 LLM 提供商和模型
+hermes tools # 配置要启用的工具
+hermes config set # 设置各个配置值
+hermes gateway # 启动消息网关（Telegram、Discord 等）
+hermes setup # 运行完整的设置向导（一次性配置所有内容）
+hermes claw migrate # 从 OpenClaw 迁移（如果来自 OpenClaw）
+hermes update # 更新到最新版本
+hermes doctor # 诊断任何问题
 ```
 
 ### 设置代理脚本
