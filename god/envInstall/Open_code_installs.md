@@ -221,4 +221,17 @@ opencode --log-level DEBUG
 * 官方文档： [https://opencode.ai/docs/](https://opencode.ai/docs/) ([OpenCode][2])
 * 中文快速入门指南： 多篇社区文章与教程（参见搜索结果）
 
+
+##  本地代码启动open code 
+
+window bun 环境不兼容
+```bash
+
+Remove-Item -Recurse -Force node_modules
+Remove-Item bun.lock
+bun -v
+bun install
+bun dev serve --hostname=127.0.0.1 --port=4096
 ```
+
+##  wsl本地代码启动open code
