@@ -1,4 +1,4 @@
-下面给你一套**Windows 环境下，使用 Docker 安装部署 Dify（官方推荐方式）**的**完整且可靠步骤**，按这个走基本不会踩坑。
+下面给你一套Windows 环境下，使用 Docker 安装部署 Dify（官方推荐方式）的完整且可靠步骤，按这个走基本不会踩坑。
 （适合 Windows 10 / 11）
 
 ---
@@ -7,21 +7,21 @@
 
 ### 1️⃣ 系统要求
 
-* Windows 10 22H2 / Windows 11（**必须支持 WSL2**）
-* 至少 **8GB 内存**（推荐 16GB）
+* Windows 10 22H2 / Windows 11（必须支持 WSL2）
+* 至少 8GB 内存（推荐 16GB）
 * 开启 CPU 虚拟化（BIOS 里开启 VT-x / SVM）
 
 ---
 
 ### 2️⃣ 安装 WSL2
 
-以**管理员 PowerShell**运行：
+以管理员 PowerShell运行：
 
 ```powershell
 wsl --install
 ```
 
-完成后**重启电脑**
+完成后重启电脑
 
 检查版本：
 
@@ -77,7 +77,7 @@ git clone https://github.com/langgenius/dify.git
 cd dify
 ```
 
-> ⚠️ 路径建议 **不要放在 C:\Users 下**，避免 IO 性能问题
+> ⚠️ 路径建议 不要放在 C:\Users 下，避免 IO 性能问题
 
 ---
 
@@ -111,7 +111,7 @@ LOG_LEVEL=INFO
 VECTOR_STORE=weaviate
 ```
 
-👉 **不需要现在就配 OpenAI Key，可以部署完再配**
+👉 不需要现在就配 OpenAI Key，可以部署完再配
 
 ---
 
@@ -183,7 +183,7 @@ http://localhost
 
 ## 七、常见问题（非常重要）
 
-### ❌ 1. 端口冲突（80 被占用）
+###  1. 端口冲突（80 被占用）
 
 修改 `.env`：
 
@@ -206,7 +206,7 @@ http://localhost:8080
 
 ---
 
-### ❌ 2. Docker 拉不下来镜像（国内网络）
+###  2. Docker 拉不下来镜像（国内网络）
 
 建议：
 
@@ -217,7 +217,7 @@ http://localhost:8080
 
 ---
 
-### ❌ 3. WSL 磁盘占用过大
+###  3. WSL 磁盘占用过大
 
 ```powershell
 wsl --shutdown
@@ -240,7 +240,7 @@ dify/
 
 ## 九、生产部署建议（给你一句重点）
 
-> **Windows 仅适合开发 / 测试**
+> Windows 仅适合开发 / 测试
 >
 > 生产环境建议：
 
@@ -253,10 +253,10 @@ dify/
 
 如果你需要👇
 
-* **Windows + 内网访问**
-* **Dify 接国产大模型（通义 / 智谱 / DeepSeek）**
-* **私有化生产部署架构图**
-* **把 Dify 接入你自己的系统（Java / React）**
+* Windows + 内网访问
+* Dify 接国产大模型（通义 / 智谱 / DeepSeek）
+* 私有化生产部署架构图
+* 把 Dify 接入你自己的系统（Java / React）
 
 你直接说一句：
 👉「我现在是【开发 / 生产】环境，想接【什么模型】」

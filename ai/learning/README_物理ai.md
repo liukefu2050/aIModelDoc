@@ -1,6 +1,6 @@
 ## 什么是 Cosmos 3？
 
-**Cosmos 3** 是 NVIDIA 在 GTC Taipei 2026 发布的新一代「世界模型（World Model）」基础模型，专门用于机器人、自动驾驶、工业设备等现实世界 AI 系统。它不是聊天模型，而是让 AI 理解物理世界、预测未来状态并生成动作的模型。([英伟达][1])
+Cosmos 3 是 NVIDIA 在 GTC Taipei 2026 发布的新一代「世界模型（World Model）」基础模型，专门用于机器人、自动驾驶、工业设备等现实世界 AI 系统。它不是聊天模型，而是让 AI 理解物理世界、预测未来状态并生成动作的模型。([英伟达][1])
 
 NVIDIA 对它的定位：
 
@@ -73,7 +73,7 @@ Cosmos 可以模拟：
 
 这也是所谓的：
 
-**World Model（世界模型）**
+World Model（世界模型）
 
 即：
 
@@ -141,7 +141,7 @@ DeepSeek
 
 这些属于：
 
-**数字世界 AI**
+数字世界 AI
 
 ---
 
@@ -164,7 +164,7 @@ DeepSeek
 
 这就是：
 
-**Physical AI（物理 AI）**
+Physical AI（物理 AI）
 
 ([英伟达][1])
 
@@ -309,7 +309,7 @@ Jetson
 
 官方称为：
 
-**Omnimodel（全模态模型）**
+Omnimodel（全模态模型）
 
 支持：
 
@@ -370,7 +370,7 @@ Cosmos 3 就是后者的基础模型。
 
 ## 一句话理解
 
-**如果 GPT 是“大脑中的语言区域”，那么 Cosmos 3 更像“大脑中的空间感知和运动控制区域”。**
+如果 GPT 是“大脑中的语言区域”，那么 Cosmos 3 更像“大脑中的空间感知和运动控制区域”。
 
 GPT 负责：
 
@@ -388,7 +388,7 @@ Cosmos 负责：
 行动
 ```
 
-而 NVIDIA 提出的 **Physical AI**，本质上就是让 AI 从“会聊天”进化到“能够在真实世界中工作”的下一阶段。([英伟达][1])
+而 NVIDIA 提出的 Physical AI，本质上就是让 AI 从“会聊天”进化到“能够在真实世界中工作”的下一阶段。([英伟达][1])
 
 [1]: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Launches-Cosmos-3-the-Open-Frontier-Foundation-Model-for-Physical-AI/default.aspx?utm_source=chatgpt.com "NVIDIA Corporation - NVIDIA Launches Cosmos 3, the Open Frontier Foundation Model for Physical AI"
 

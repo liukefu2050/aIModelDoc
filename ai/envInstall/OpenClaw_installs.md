@@ -1,7 +1,7 @@
 
 # 本地运行 OpenClaw 快速指南
 
-本文档整理了 **OpenClaw 本地安装、配置、启动、关闭和再次启动** 的完整流程，适合第一次部署的用户。
+本文档整理了 OpenClaw 本地安装、配置、启动、关闭和再次启动 的完整流程，适合第一次部署的用户。
 
 ---
 
@@ -17,7 +17,7 @@ openclaw onboard --install-daemon
 ```
 
 
-## 1?? 模型选择
+## 1 模型选择
 
 启动 OpenClaw 时会提示选择模型：
 
@@ -30,18 +30,18 @@ Default model
 
 ```
 
-- **推荐选择**：`Keep current (qwen-portal/coder-model)`  
+- 推荐选择：`Keep current (qwen-portal/coder-model)`  
 - 原因：
   - 默认代码模型
   - 兼容性最好
   - 适合本地调试、Chatflow、Agent
-- **注意**：
+- 注意：
   - `vision-model` 只用于图像识别，多数场景不需要
   - 手动输入模型名只在你有自定义模型时使用
 
 ---
 
-## 2?? 选择 Channel
+## 2 选择 Channel
 
 ```
 
@@ -55,7 +55,7 @@ Select channel (QuickStart)
 
 ```
 
-- **推荐选择**：`Skip for now`
+- 推荐选择：`Skip for now`
 - 原因：
   - 本地运行无需对接外部 IM
   - 可以先测试 Chatflow / Agent 功能
@@ -63,7 +63,7 @@ Select channel (QuickStart)
 
 ---
 
-## 3?? Skills 配置
+## 3 Skills 配置
 
 ### ① Skills 状态
 
@@ -76,7 +76,7 @@ Skills status
 
 ```
 
-- **推荐操作**：`Yes`（配置技能）
+- 推荐操作：`Yes`（配置技能）
 - 原因：
   - 注册可用的 3 个基础技能
   - 不影响后续使用
@@ -93,7 +93,7 @@ Preferred node manager for skill installs
 
 ```
 
-- **推荐选择**：`npm`
+- 推荐选择：`npm`
 - 原因：
   - 兼容性最好
   - 文档和安装脚本默认使用 npm
@@ -104,14 +104,14 @@ Preferred node manager for skill installs
 ```
 
 Install missing skill dependencies
-|  [?] Skip for now
+|  [] Skip for now
 |  [ ] 1password
 |  [ ] github
 |  ...
 
 ```
 
-- **推荐操作**：保持 `Skip for now`
+- 推荐操作：保持 `Skip for now`
 - 原因：
   - 大部分技能需要外部 API Key 或系统依赖
   - 初次本地运行不必安装
@@ -119,10 +119,10 @@ Install missing skill dependencies
 
 ### ④ API Key 配置
 
-对于提示 `Set XXX_API_KEY for YYY?`：
+对于提示 `Set XXX_API_KEY for YYY`：
 
-- **GOOGLE_PLACES_API_KEY / GEMINI_API_KEY / LOCAL-PLACES**  
-- **推荐选择**：`No`
+- GOOGLE_PLACES_API_KEY / GEMINI_API_KEY / LOCAL-PLACES  
+- 推荐选择：`No`
 - 原因：
   - 本地运行不需要
   - 避免配置失败或中断
@@ -130,18 +130,18 @@ Install missing skill dependencies
 
 ---
 
-## 4?? 启动 Bot（Hatch）
+## 4 启动 Bot（Hatch）
 
 ```
 
-How do you want to hatch your bot?
+How do you want to hatch your bot
 |  > Hatch in TUI (recommended)
 |    Open the Web UI
 |    Do this later
 
 ```
 
-- **推荐选择**：`Hatch in TUI`
+- 推荐选择：`Hatch in TUI`
 - 原因：
   - 直接在终端运行
   - 不依赖浏览器
@@ -151,7 +151,7 @@ How do you want to hatch your bot?
 
 ---
 
-## 5?? 启动成功验证
+## 5 启动成功验证
 
 成功启动后，你会看到：
 
@@ -159,7 +159,7 @@ How do you want to hatch your bot?
 
 session agent:main:main
 Wake up, my friend!
-Hey. I just came online. Who am I? Who are you?
+Hey. I just came online. Who am I Who are you
 gateway connected | idle
 agent main | session main (openclaw-tui) | qwen-portal/coder-model | tokens 0/128k (0%)
 
@@ -174,15 +174,15 @@ agent main | session main (openclaw-tui) | qwen-portal/coder-model | tokens 0/12
 
 ---
 
-## 6?? 关闭 OpenClaw
+## 6 关闭 OpenClaw
 
-* 在 TUI 或 Web UI 下，**按 `Ctrl + C`**
+* 在 TUI 或 Web UI 下，按 `Ctrl + C`
 * 安全停止，不会破坏配置
 * 配置文件通常在 `~/.openclaw`，保持不变
 
 ---
 
-## 7?? 再次启动 OpenClaw
+## 7 再次启动 OpenClaw
 
 ### 使用 TUI（推荐）
 
@@ -208,13 +208,13 @@ openclaw web
 
 ---
 
-## ? 小贴士
+##  小贴士
 
-1. **API Key**：不需要立刻设置，按需再加
-2. **技能**：初次运行可全跳过，后续需要再单独安装
-3. **模型**：默认 `qwen-portal/coder-model` 足够使用
-4. **Channel**：Skip for now → 本地跑最稳
-5. **Node manager**：npm 最稳
+1. API Key：不需要立刻设置，按需再加
+2. 技能：初次运行可全跳过，后续需要再单独安装
+3. 模型：默认 `qwen-portal/coder-model` 足够使用
+4. Channel：Skip for now → 本地跑最稳
+5. Node manager：npm 最稳
 
 ---
 

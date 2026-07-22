@@ -1,25 +1,25 @@
 
 # OpenCode 本地安装与快速启动指南
 
-OpenCode 是一个**开源 AI 编程智能体 (AI coding agent)**，类似 Claude Code，但更加开放和灵活。:contentReference[oaicite:0]{index=0}
+OpenCode 是一个开源 AI 编程智能体 (AI coding agent)，类似 Claude Code，但更加开放和灵活。:contentReference[oaicite:0]{index=0}
 
 ---
 
-## ? 一、安装依赖
+##  一、安装依赖
 
-### 1?? Node.js（可选）
+### 1 Node.js（可选）
 - 部分安装方式需要 Node.js（Windows/macOS/Linux）
 - 推荐安装 Node.js 最新 LTS
 
 ---
 
-## ? 二、安装 OpenCode
+##  二、安装 OpenCode
 
 OpenCode 提供多种安装方式，可以按系统和习惯选择。
 
 ---
 
-### ? 官方一键安装脚本（推荐）
+###  官方一键安装脚本（推荐）
 
 ```bash
 curl -fsSL https://opencode.ai/install | bash
@@ -29,9 +29,9 @@ curl -fsSL https://opencode.ai/install | bash
 
 ---
 
-### ? 通过包管理器安装
+###  通过包管理器安装
 
-#### ? macOS / Linux
+####  macOS / Linux
 
 ```bash
 brew install anomalyco/tap/opencode
@@ -41,7 +41,7 @@ brew install anomalyco/tap/opencode
 
 ---
 
-#### ? Windows
+####  Windows
 
 可通过多种方式：
 
@@ -51,11 +51,11 @@ brew install anomalyco/tap/opencode
 npm install -g opencode-ai@latest
 ```
 
-?? Node 方式需要先安装 Node.js。([Opencode][1])
+ Node 方式需要先安装 Node.js。([Opencode][1])
 
 ---
 
-#### ? Linux 发行版包
+####  Linux 发行版包
 
 部分发行版可用：
 
@@ -67,7 +67,7 @@ paru -S opencode-bin
 
 ---
 
-#### ? Docker 启动（沙盒环境）
+####  Docker 启动（沙盒环境）
 
 ```bash
 docker run -it --rm ghcr.io/anomalyco/opencode
@@ -99,7 +99,7 @@ docker run -it --rm ghcr.io/anomalyco/opencode
 }
 ```
 
-## ?? 三、启动 OpenCode
+##  三、启动 OpenCode
 
 安装完成后，在终端中运行：
 
@@ -109,20 +109,20 @@ opencode
 
 ---
 
-## ?? 四、首次启动与配置
+##  四、首次启动与配置
 
 首次运行时，你可能会看到一个欢迎向导或一些提示：
 
-1. **选择登录方式**
+1. 选择登录方式
    使用 GitHub 或 OpenCode 账号登录（可选）
-2. **选择或添加 AI 模型**
+2. 选择或添加 AI 模型
    OpenCode 支持多种模型，可用内置试用模型或配置自己的 API Key
-3. **导入现有配置**（可选）
+3. 导入现有配置（可选）
    如果之前使用过 VS Code 插件等，可导入设置。([OpenCodex][4])
 
 ---
 
-## ? 五、基本使用
+##  五、基本使用
 
 在 OpenCode 终端中输入命令：
 
@@ -140,9 +140,9 @@ opencode
 
 ---
 
-## ? 六、高级用法
+##  六、高级用法
 
-### ? 切换 Agent
+###  切换 Agent
 
 OpenCode 内置两个 Agent：
 
@@ -151,7 +151,7 @@ OpenCode 内置两个 Agent：
 
 ---
 
-### ? 配置模型 Provider
+###  配置模型 Provider
 
 创建或编辑配置文件：
 
@@ -178,7 +178,7 @@ OpenCode 内置两个 Agent：
 
 ---
 
-## ? 七、桌面与 Web 版本（可选）
+##  七、桌面与 Web 版本（可选）
 
 OpenCode 支持：
 
@@ -189,7 +189,7 @@ OpenCode 支持：
 
 ---
 
-## ? 八、常见问题与排错
+##  八、常见问题与排错
 
 如果无法启动：
 
@@ -207,7 +207,7 @@ opencode --log-level DEBUG
 
 ---
 
-## ? 九、小贴士
+##  九、小贴士
 
 * OpenCode 是 MIT 协议开源项目，不依赖特定提供商。([GitHub][5])
 * 支持多种模型和本地模型（如 Ollama、LM Studio）配置。
@@ -215,7 +215,7 @@ opencode --log-level DEBUG
 
 ---
 
-## ? 参考资源
+##  参考资源
 
 * GitHub 仓库： [https://github.com/anomalyco/opencode](https://github.com/anomalyco/opencode) ([GitHub][5])
 * 官方文档： [https://opencode.ai/docs/](https://opencode.ai/docs/) ([OpenCode][2])

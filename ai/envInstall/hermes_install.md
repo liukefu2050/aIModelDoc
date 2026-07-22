@@ -1,6 +1,6 @@
 ### wsl --install
 
-以**管理员 PowerShell**运行：
+以管理员 PowerShell运行：
 
 ```powershell
 wsl --install
