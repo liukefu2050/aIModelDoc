@@ -1,14 +1,14 @@
 
-# ±¾µØÔËĞĞ coze-studio ¿ìËÙÖ¸ÄÏ
+# æœ¬åœ°è¿è¡Œ coze-studio å¿«é€ŸæŒ‡å—
 
 
-## »ñÈ¡´úÂë
+## è·å–ä»£ç 
 
 ```
 git clone https://github.com/coze-dev/coze-studio.git
 ```
 
-## ²¿Êğ²¢Æô¶¯·şÎñ
+## éƒ¨ç½²å¹¶å¯åŠ¨æœåŠ¡
 
 ```
 cd coze-studio
@@ -19,8 +19,8 @@ make web
 cp ./docker/.env.example ./docker/.env
 docker compose -f ./docker/docker-compose.yml up
 ```
-±¨´í£º
+æŠ¥é”™ï¼š
 unable to get image 'nsqio/nsq:v1.2.1': error during connect: Get "http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/images/nsqio/nsq:v1.2.1/json": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
 
-½â¾ö£ºÏÈÆô¶¯Docker Desktop
+è§£å†³ï¼šå…ˆå¯åŠ¨Docker Desktop
 

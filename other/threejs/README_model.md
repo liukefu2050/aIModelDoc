@@ -1,3 +1,3 @@
-# ´´½¨3D Ä£ÐÍ
+# åˆ›å»º3D æ¨¡åž‹
 
-Blender£¬Maya »òÕß Cinema 4D
+Blenderï¼ŒMaya æˆ–è€… Cinema 4D
